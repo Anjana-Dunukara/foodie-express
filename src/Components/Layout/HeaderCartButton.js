@@ -5,11 +5,11 @@ import CartIcon from "../Cart/CartIcon";
 const HeaderCartButton = (props) => {
   return (
     <button className={styles.button}>
-      <span>
+      <span className={styles.icon}>
         <CartIcon />
       </span>
       <span>Your Cart</span>
-      <span>3</span>
+      <span className={styles.badge}>3</span>
     </button>
   );
 };
