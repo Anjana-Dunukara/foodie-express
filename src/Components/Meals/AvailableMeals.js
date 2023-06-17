@@ -36,9 +36,7 @@ const AvailableMeals = () => {
       title={meal.name}
       description={meal.description}
       price={meal.price}
-    >
-      {meal.name}
-    </MealItem>
+    />
   ));
 
   return (
