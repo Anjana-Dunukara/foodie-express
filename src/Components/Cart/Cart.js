@@ -14,7 +14,9 @@ const Cart = (props) => {
     cartCtx.addItem({ ...item, amount: 1 });
   };
 
-  const onRemoveHandler = (id) => {};
+  const onRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
 
   const cartItems = (
     <ul className={styles["cart-items"]}>
